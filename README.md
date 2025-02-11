@@ -1,0 +1,1 @@
+在原有mvs_ros_pkg的基础上添加camera_info话题，统一接口，方便标定包采用
