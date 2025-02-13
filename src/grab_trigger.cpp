@@ -355,7 +355,7 @@ int main(int argc, char **argv)
   image_pub = it.advertiseCamera(pub_topic, 1000);
 
   const char *user_name = getlogin();
-  std::string path_for_time_stamp = "/home/nuc000/timeshare";
+  std::string path_for_time_stamp = "/home/" + std::string(user_name) + "/timeshare";
   const char *shared_file_name = path_for_time_stamp.c_str();
 
   int fd = open(shared_file_name, O_RDWR);
